@@ -1,0 +1,11 @@
+{
+  "id": "Test",           
+  "name": "Test Mod",
+  "author": "shanzuiyixing",
+  "description": "多人联机卡牌+",
+  "version": "1.0",
+  "has_pck": true,         
+  "has_dll": true,        
+  "dependencies": ["BaseLib"],     
+  "affects_gameplay": true 
+}
