@@ -1,4 +1,8 @@
 {
     "TEST-TEST_CARD.title": "测试卡牌",
-    "TEST-TEST_CARD.description": "造成{Damage:diff(10)}点伤害。"
+    "TEST-TEST_CARD.description": "造成{Damage:diff()}点伤害。",
+
+    "TEST-LIFE_SWAP.title": "循环",
+    "TEST-LIFE_SWAP.smartDescription": "每次抽牌时，获得[blue]{Amount}[/blue]点[gold]力量[/gold]。", 
+    "TEST-LIFE_SWAP.description": "每个回合结束时，获得获得等同于层数的格挡，然后交换血量和格挡值"
 }
