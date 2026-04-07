@@ -1,4 +1,8 @@
 {
     "TEST-TEST_CARD.title": "测试卡牌",
-    "TEST-TEST_CARD.description": "造成{Damage:diff(10)}点伤害。"
+    "TEST-TEST_CARD.description": "造成{Damage:diff(10)}点伤害。",
+
+    "TEST-NOTBELIEVEINYOU.title": "很难相信",
+    "TEST-NOTBELIEVEINYOU.description": "另一名玩家获得失去所有能量，你获得双倍能量"
+
 }
