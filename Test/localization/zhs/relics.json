@@ -1,5 +1,13 @@
 {
   "TEST-TEST_RELIC.title": "测试遗物",
   "TEST-TEST_RELIC.description": "每回合开始时，抽[blue]{Cards}[/blue]张牌。",
-  "TEST-TEST_RELIC.flavor": "觉得很眼熟？"
+  "TEST-TEST_RELIC.flavor": "觉得很眼熟？",
+
+  "TEST-GOLD_RELIC.title": "黄金遗物",
+  "TEST-GOLD_RELIC.description": "获得[blue]{Gold:diff()}[blue]金币",
+  "TEST-GOLD_RELIC.flavor": "觉得很眼熟？",
+
+  "TEST-LIFESWAP_RELIC.title":"诅咒面具",
+  "TEST-LIFESWAP_RELIC.description": "游戏开始时，获得[blue]8[/blue]层邪火",
+  "TEST-LIFESWAP_RELIC.flavor": "觉得很眼熟？"
 }

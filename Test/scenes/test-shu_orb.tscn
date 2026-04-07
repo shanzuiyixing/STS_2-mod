@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://dsdxjwg6t3m5a"]
+
+[node name="Test" type="Node2D"]
+
+[node name="TestShuOrb" type="Sprite2D" parent="."]
+position = Vector2(0, 1)

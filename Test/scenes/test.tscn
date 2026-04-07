@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://c4e02kd8xyb1o"]
+
+[ext_resource type="Texture2D" path="res://Test/scenes/test-shu_orb.png" id="1_utff0"]
+
+[node name="Test" type="Node2D"]
+
+[node name="TestShuOrb" type="Sprite2D" parent="."]
+position = Vector2(312, 259)
+texture = ExtResource("1_utff0")
