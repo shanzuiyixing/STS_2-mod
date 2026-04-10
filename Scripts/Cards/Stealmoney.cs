@@ -9,13 +9,13 @@ using MegaCrit.Sts2.Core.Models.CardPools;
 
 namespace Test.Scripts.Cards;
 
-[Pool(typeof(ColorlessCardPool))]
+[Pool(typeof(CurseCardPool))]
 
 public class Stealmoney : CustomCardModel
 {
     // 标准动态变量：定义卡牌核心数值（能量）
     protected override IEnumerable<DynamicVar>CanonicalVars => [
-        new GoldVar(10)
+        new GoldVar(1)
     ];
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];
     public override string PortraitPath => $"res://Test/images/cards/{Id.Entry.ToLowerInvariant()}.png";    
@@ -50,7 +50,7 @@ public class Stealmoney : CustomCardModel
     // 卡牌升级时执行
     protected override void OnUpgrade()
 	{
-		base.DynamicVars.Gold.UpgradeValueBy(20m);
+		base.DynamicVars.Gold.UpgradeValueBy(1m);
     }
     
 }

@@ -27,6 +27,7 @@ public class TestRelic : CustomRelicModel
 
     public override async Task AfterPlayerTurnStart(PlayerChoiceContext choiceContext, Player player)
     {
+        Flash();
         // 这里的DynamicVars.Cards.IntValue为上面设置的CardsVar的数值。
         await CardPileCmd.Draw(choiceContext, DynamicVars.Cards.IntValue, player);
     }
