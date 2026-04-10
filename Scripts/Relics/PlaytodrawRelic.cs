@@ -1,15 +1,18 @@
 using BaseLib.Abstracts;
 using BaseLib.Utils;
-using MegaCrit.Sts2.Core.Commands;
+using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Entities.Relics;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models.RelicPools;
-using MegaCrit.Sts2.Core.Entities.Players;
+using MegaCrit.Sts2.Core.Entities.Cards;
+using MegaCrit.Sts2.Core.Models;
+using MegaCrit.Sts2.Core.Commands;
+using MegaCrit.Sts2.Core.ValueProps;
 
 namespace Test.Scripts.Relics;
 
-[Pool(typeof(SilentRelicPool))]
+[Pool(typeof(SharedRelicPool))]
 public class PlaytodrawRelic : CustomRelicModel
 {
     // 稀有度
@@ -25,9 +28,15 @@ public class PlaytodrawRelic : CustomRelicModel
     // 大图标
     protected override string BigIconPath => $"res://Test/images/relics/{Id.Entry.ToLowerInvariant()}.png";
 
-    public override async Task AfterPlayerTurnStart(PlayerChoiceContext choiceContext, Player player)
+    public override async Task BeforeTurnEnd(PlayerChoiceContext choiceContext, CombatSide side)
     {
-        // 这里的DynamicVars.Cards.IntValue为上面设置的CardsVar的数值。
-        await CardPileCmd.Draw(choiceContext, DynamicVars.Cards.IntValue, player);
+        if (side == base.Owner.Creature.Side)
+		{
+			IReadOnlyList<CardModel> cards = PileType.Hand.GetPile(base.Owner).Cards;
+			foreach (CardModel c in cards.ToList())
+            {
+                await CardPileCmd.Add(c,PileType.Draw);
+            }
+		}
     }
 }

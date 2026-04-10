@@ -18,8 +18,8 @@ public class LifeswapPower : CustomPowerModel
     // 显示格挡UI
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.Static(StaticHoverTip.Block),];
     // 自定义图标路径，自己指定，或者创建一个基类来统一指定图标路径
-    public override string? CustomPackedIconPath => $"res://Test/images/powers/{Id.Entry.ToLowerInvariant()}.png";
-    public override string? CustomBigIconPath => $"res://Test/images/powers/{Id.Entry.ToLowerInvariant()}.png";
+    public override string? CustomPackedIconPath => $"res://Test/images/powers/{Id.Entry.ToLowerInvariant()}_small.png";
+    public override string? CustomBigIconPath => $"res://Test/images/powers/{Id.Entry.ToLowerInvariant()}_big.png";
     private const string _selfDamageKey = "SelfDamage";
 
     // protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar("SelfDamage", 0m, ValueProp.Unblockable | ValueProp.Unpowered)];

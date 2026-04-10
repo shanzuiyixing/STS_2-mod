@@ -4,10 +4,18 @@
   "TEST-TEST_RELIC.flavor": "觉得很眼熟？",
 
   "TEST-GOLD_RELIC.title": "黄金遗物",
-  "TEST-GOLD_RELIC.description": "获得[blue]{Gold:diff()}[blue]金币",
+  "TEST-GOLD_RELIC.description": "获得[blue]{Gold:diff()}[blue]金币,将最大生命值设置为[blue]1[/blue]",
   "TEST-GOLD_RELIC.flavor": "觉得很眼熟？",
 
   "TEST-LIFESWAP_RELIC.title":"诅咒面具",
   "TEST-LIFESWAP_RELIC.description": "游戏开始时，获得[blue]8[/blue]层邪火",
-  "TEST-LIFESWAP_RELIC.flavor": "觉得很眼熟？"
+  "TEST-LIFESWAP_RELIC.flavor": "觉得很眼熟？",
+
+  "TEST-STEALMONEY_RELIC.title":"拟态卑鄙了",
+  "TEST-STEALMONEY_RELIC.description": "每局游戏开始时，将一张团体增益牌加入手牌",
+  "TEST-STEALMONEY_RELIC.flavor": "觉得很眼熟？",
+
+  "TEST-PLAYTODRAW_RELIC.title":"拟态卑鄙了",
+  "TEST-PLAYTODRAW_RELIC.description": "回合结束时，手牌会进入抽牌堆",
+  "TEST-PLAYTODRAW_RELIC.flavor": "觉得很眼熟？"
 }
