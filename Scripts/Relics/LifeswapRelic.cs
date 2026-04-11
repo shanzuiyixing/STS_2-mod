@@ -28,5 +28,5 @@ public class LifeswapRelic : CustomRelicModel
 	{
 		Flash();
         await PowerCmd.Apply<LifeswapPower>(base.Owner.Creature,base.DynamicVars["LifeswapPower"].BaseValue,base.Owner.Creature,null);
-	}
+	} 
 }

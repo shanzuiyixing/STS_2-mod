@@ -29,6 +29,7 @@ public class GoldRelic : CustomRelicModel
 
     public override async Task AfterObtained()
 	{
+        Flash();
 		await PlayerCmd.GainGold(base.DynamicVars.Gold.BaseValue, base.Owner);
         await CreatureCmd.SetMaxHp(base.Owner.Creature,1m);
 	}

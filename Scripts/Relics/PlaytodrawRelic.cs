@@ -32,6 +32,7 @@ public class PlaytodrawRelic : CustomRelicModel
     {
         if (side == base.Owner.Creature.Side)
 		{
+            Flash();
 			IReadOnlyList<CardModel> cards = PileType.Hand.GetPile(base.Owner).Cards;
 			foreach (CardModel c in cards.ToList())
             {

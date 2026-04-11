@@ -9,6 +9,14 @@
     "TEST-STATUSTOFRIEND.description": "消耗你的所有状态牌，（偷偷的）将等量随机状态牌加入另一名玩家的弃牌堆",
 
     "TEST-STEALMONEY.title": "增益",
-    "TEST-STEALMONEY.description": "获取每个其他玩家十块钱"
-    
+    "TEST-STEALMONEY.description": "获取每个其他玩家一块钱",
+
+    "TEST-LOTTERDRAW.title": "防御抽奖",
+    "TEST-LOTTERDRAW.description": "进行一次防御端抽奖",
+
+    "TEST-RANDOMPOWER.title": "能力抽奖",
+    "TEST-RANDOMPOWER.description": "进行一次强力能力端抽奖",
+
+    "TEST-GAMBLING.title": "读博",
+    "TEST-GAMBLING.description": "花费10金币，进行一次金币抽奖"
 }

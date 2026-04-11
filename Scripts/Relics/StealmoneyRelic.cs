@@ -36,6 +36,7 @@ public class StealmoneyRelic : CustomRelicModel
 		{
 			return;
 		}
+        Flash();
         CardModel stealcard  = base.Owner.Creature.CombatState.CreateCard<Stealmoney>(base.Owner);
 		await CardPileCmd.AddGeneratedCardToCombat(stealcard, PileType.Hand, addedByPlayer: true);
 	}
