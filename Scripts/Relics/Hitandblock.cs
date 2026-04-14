@@ -23,11 +23,11 @@ public class Hitandblock : CustomRelicModel
 		new PowerVar<AnticipatePower>("dPower",2m)
         ];
     // 小图标
-    public override string PackedIconPath => $"res://Test/images/relics/test-gold_relic_small.png";
+    public override string PackedIconPath => $"res://Test/images/relics/{Id.Entry.ToLowerInvariant()}_small.png";
     // 轮廓图标
-    protected override string PackedIconOutlinePath => $"res://Test/images/relics/test-gold_relic_min.png";
+    protected override string PackedIconOutlinePath => $"res://Test/images/relics/{Id.Entry.ToLowerInvariant()}_min.png";
     // 大图标
-    protected override string BigIconPath => $"res://Test/images/relics/test-gold_relic_big.png";
+    protected override string BigIconPath => $"res://Test/images/relics/{Id.Entry.ToLowerInvariant()}_big.png";
 
     public override bool HasUponPickupEffect => true;
 

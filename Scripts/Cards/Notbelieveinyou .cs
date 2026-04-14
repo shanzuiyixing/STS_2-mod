@@ -36,7 +36,7 @@ public class Notbelieveinyou : CustomCardModel
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
         // 校验：必须选择目标队友（为空则报错）
-        ArgumentNullException.ThrowIfNull(cardPlay.Target, "cardPlay.Target");
+    ArgumentNullException.ThrowIfNull(cardPlay.Target, "cardPlay.Target");
         var targetPlayer = cardPlay.Target.Player;
         var selfPlayer = base.Owner;
         int targetEnergy = targetPlayer.PlayerCombatState.Energy;

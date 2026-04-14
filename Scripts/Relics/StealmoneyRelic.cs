@@ -20,7 +20,7 @@ public class StealmoneyRelic : CustomRelicModel
 
     // 遗物的数值。替换本地化中的{Cards}。
     protected override IEnumerable<DynamicVar> CanonicalVars => [
-        new GoldVar(10)
+        new GoldVar(1)
         ];
     // 小图标
     public override string PackedIconPath => $"res://Test/images/relics/{Id.Entry.ToLowerInvariant()}_small.png";

@@ -1,7 +1,4 @@
 {
-    "TEST-TEST_CARD.title": "测试卡牌",
-    "TEST-TEST_CARD.description": "造成{Damage:diff(10)}点伤害。",
-
     "TEST-NOTBELIEVEINYOU.title": "很难相信",
     "TEST-NOTBELIEVEINYOU.description": "另一名玩家获得失去所有能量，你获得其失去的双倍能量",
 
@@ -12,11 +9,14 @@
     "TEST-STEALMONEY.description": "获取每个其他玩家一块钱",
 
     "TEST-LOTTERDRAW.title": "防御抽奖",
-    "TEST-LOTTERDRAW.description": "进行一次防御端抽奖",
+    "TEST-LOTTERDRAW.description": "所有玩家进行一次防御端抽奖",
 
     "TEST-RANDOMPOWER.title": "能力抽奖",
     "TEST-RANDOMPOWER.description": "进行一次强力能力端抽奖",
 
     "TEST-GAMBLING.title": "读博",
-    "TEST-GAMBLING.description": "花费10金币，进行一次金币抽奖"
+    "TEST-GAMBLING.description": "花费10金币，进行一次金币抽奖",
+
+    "TEST-ABSORB.title": "嗜血",
+    "TEST-ABSORB.description": "获得[blue]{AbsorbPower:diff()}[/blue]层汲取\n回合结束时，失去所有汲取"
 }

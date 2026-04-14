@@ -42,8 +42,12 @@ public class Stealmoney : CustomCardModel
     // 2. 遍历每个队友，执行抽牌
     foreach (Creature item in enumerable)
     {
-        await PlayerCmd.LoseGold(base.DynamicVars.Gold.BaseValue, item.Player);
         await PlayerCmd.GainGold(base.DynamicVars.Gold.BaseValue, base.Owner);
+        if(item == base.Owner.Creature)
+            {
+                continue;
+            }
+        await PlayerCmd.LoseGold(base.DynamicVars.Gold.BaseValue, item.Player);
     }
     }
 

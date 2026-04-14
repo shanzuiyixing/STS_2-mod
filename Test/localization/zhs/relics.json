@@ -4,11 +4,11 @@
   "TEST-TEST_RELIC.flavor": "觉得很眼熟？",
 
   "TEST-GOLD_RELIC.title": "黄金圣物",
-  "TEST-GOLD_RELIC.description": "获得[blue]{Gold:diff()}[blue]金币,将最大生命值设置为[blue]1[/blue]",
+  "TEST-GOLD_RELIC.description": "获得[blue]{Gold:diff()}[/blue]金币,将最大生命值设置为[blue]1[/blue]",
   "TEST-GOLD_RELIC.flavor": "觉得很眼熟？",
 
   "TEST-LIFESWAP_RELIC.title":"诅咒面具-赤",
-  "TEST-LIFESWAP_RELIC.description": "游戏开始时，获得[blue]8[/blue]层邪火",
+  "TEST-LIFESWAP_RELIC.description": "战斗开始时，获得[blue]8[/blue]层邪火",
   "TEST-LIFESWAP_RELIC.flavor": "觉得很眼熟？",
 
   "TEST-STEALMONEY_RELIC.title":"拟态卑鄙了",
@@ -19,7 +19,11 @@
   "TEST-PLAYTODRAW_RELIC.description": "回合结束时，手牌会进入抽牌堆",
   "TEST-PLAYTODRAW_RELIC.flavor": "觉得很眼熟？",
 
-  "TEST-HITANDBLOCK_RELIC.title":"太极",
-  "TEST-HITANDBLOCK_RELIC.description": "奇数回合：获得[blue]3[/blue]力量和脆弱/n 偶数回合：获得[blue]2[/blue]敏捷和虚弱",
-  "TEST-HITANDBLOCK_RELIC.flavor": "觉得很眼熟？"
+  "TEST-HITANDBLOCK.title":"循环",
+  "TEST-HITANDBLOCK.description": "奇数回合：获得[blue]3[/blue]力量和脆弱\n 偶数回合：获得[blue]2[/blue]敏捷和虚弱",
+  "TEST-HITANDBLOCK.flavor": "觉得很眼熟？",
+
+  "TEST-REVIVE_PACT_RELIC.title":"死灵法师",
+  "TEST-REVIVE_PACT_RELIC.description": "每次战斗中，另一名玩家死亡后会复活一次\n拾起时，失去[red]23[/red]点最大生命",
+  "TEST-REVIVE_PACT_RELIC.flavor": "觉得很眼熟？"
 }

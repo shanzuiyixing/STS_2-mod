@@ -22,11 +22,11 @@ public class PlaytodrawRelic : CustomRelicModel
     protected override IEnumerable<DynamicVar> CanonicalVars => [new CardsVar(1)];
 
     // 小图标
-    public override string PackedIconPath => $"res://Test/images/relics/{Id.Entry.ToLowerInvariant()}.png";
+    public override string PackedIconPath => $"res://Test/images/relics/{Id.Entry.ToLowerInvariant()}_small.png";
     // 轮廓图标
-    protected override string PackedIconOutlinePath => $"res://Test/images/relics/{Id.Entry.ToLowerInvariant()}.png";
+    protected override string PackedIconOutlinePath => $"res://Test/images/relics/{Id.Entry.ToLowerInvariant()}_min.png";
     // 大图标
-    protected override string BigIconPath => $"res://Test/images/relics/{Id.Entry.ToLowerInvariant()}.png";
+    protected override string BigIconPath => $"res://Test/images/relics/{Id.Entry.ToLowerInvariant()}_big.png";
 
     public override async Task BeforeTurnEnd(PlayerChoiceContext choiceContext, CombatSide side)
     {

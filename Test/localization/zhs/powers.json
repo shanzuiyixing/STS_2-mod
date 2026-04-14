@@ -1,4 +1,7 @@
 {
     "TEST-LIFESWAP_POWER.description": "每回合结束时，获得[blue]8[/blue]点格挡，交换格挡值和血量",
-    "TEST-LIFESWAP_POWER.title": "邪火"
+    "TEST-LIFESWAP_POWER.title": "邪火",
+
+    "TEST-ABSORB_POWER.description": "回复造成伤害25%的血量",
+    "TEST-ABSORB_POWER.title": "汲取"
 }

@@ -43,10 +43,12 @@ public class Lotterydraw : CustomCardModel
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
         // 1. 筛选所有存活的队友玩家
-        IEnumerable<Creature> enumerable = from c in base.CombatState.GetTeammatesOf(base.Owner.Creature)
+#pragma warning disable CS8602 // 解引用可能出现空引用。
+        IEnumerable<Creature> enumerable = from c in CombatState.GetTeammatesOf(base.Owner.Creature)
             where c != null && c.IsAlive && c.IsPlayer
             select c;
-        Rng rewards = base.Owner.Creature.Player.PlayerRng.Rewards;
+#pragma warning restore CS8602 // 解引用可能出现空引用。
+        Rng rewards = Owner.Creature.Player.PlayerRng.Rewards;
         int random = rewards.NextInt(100);
         // 2. 遍历每个队友，执行抽牌
         foreach (Creature item in enumerable)
