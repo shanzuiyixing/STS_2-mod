@@ -35,6 +35,10 @@ public class Hitandblock : CustomRelicModel
 	{
         CombatState combatState = player.Creature.CombatState;
         int turnnumber = combatState.RoundNumber;
+        if (base.Owner.Creature.Player != player)
+        {
+            return;
+        }
 		if(turnnumber % 2 == 1)
         {
             await PowerCmd.Remove<WeakPower>(base.Owner.Creature);

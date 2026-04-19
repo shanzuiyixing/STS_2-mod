@@ -16,7 +16,7 @@
   "TEST-STEALMONEY_RELIC.flavor": "觉得很眼熟？",
 
   "TEST-PLAYTODRAW_RELIC.title":"诅咒面具-青",
-  "TEST-PLAYTODRAW_RELIC.description": "回合结束时，手牌会进入抽牌堆",
+  "TEST-PLAYTODRAW_RELIC.description": "回合结束时，手牌会进入抽牌堆，每回合多抽一张牌",
   "TEST-PLAYTODRAW_RELIC.flavor": "觉得很眼熟？",
 
   "TEST-HITANDBLOCK.title":"循环",
@@ -25,5 +25,29 @@
 
   "TEST-REVIVE_PACT_RELIC.title":"死灵法师",
   "TEST-REVIVE_PACT_RELIC.description": "每次战斗中，另一名玩家死亡后会复活一次\n拾起时，失去[red]23[/red]点最大生命",
-  "TEST-REVIVE_PACT_RELIC.flavor": "觉得很眼熟？"
+  "TEST-REVIVE_PACT_RELIC.flavor": "觉得很眼熟？",
+
+  "TEST-ABSORB_ANCIENT.title":"吸收者",
+  "TEST-ABSORB_ANCIENT.description": "拾起时，将[blue]1[/blue]张[gold]嗜血[/gold]添加到你的[gold]牌组[/gold]中。",
+  "TEST-ABSORB_ANCIENT.flavor": "觉得很眼熟？",
+
+  "TEST-TURN_ANCIENT.title":"转换者",
+  "TEST-TURN_ANCIENT.description": "每次抽牌时，获得[blue]1[/blue]点力量、敏捷或能量，每打出牌，失去[red]1[/red]点力量、敏捷或能量",
+  "TEST-TURN_ANCIENT.flavor": "觉得很眼熟？",
+
+  "TEST-NINELIVES_RELIC.title":"九条命",
+  "TEST-NINELIVES_RELIC.description": "拥有9次复活机会，当你死亡时，对所有敌人造成999伤害，拾起时，将最大生命值设置成[red]10[/red]",
+  "TEST-NINELIVES_RELIC.flavor": "觉得很眼熟？",
+
+  "TEST-LOTTERYDRAW_ANCIENT.title":"幸运之子",
+  "TEST-LOTTERYDRAW_ANCIENT.description": "拾起时，将[blue]1[/blue]张[gold]防御抽奖[/gold]添加到你的[gold]牌组[/gold]中。",
+  "TEST-LOTTERYDRAW_ANCIENT.flavor": "觉得很眼熟？",
+
+  "TEST-RANDOMPOWER_ANCIENT.title":"能力抽奖",
+  "TEST-RANDOMPOWER_ANCIENT.description": "拾起时，将[blue]1[/blue]张[gold]能力抽奖[/gold]添加到你的[gold]牌组[/gold]中。",
+  "TEST-RANDOMPOWER_ANCIENT.flavor": "觉得很眼熟？",
+
+  "TEST-STEALBLOCK.title":" 窃取",
+  "TEST-STEALBLOCK.description": "窃取另一名队友的格挡",
+  "TEST-STEALBLOCK.flavor": "觉得很眼熟？"
 }

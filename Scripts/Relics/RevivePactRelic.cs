@@ -37,7 +37,8 @@ public class RevivePactRelic : CustomRelicModel
     protected override string PackedIconOutlinePath => $"res://Test/images/relics/{Id.Entry.ToLowerInvariant()}_min.png";
     // 大图标
     protected override string BigIconPath => $"res://Test/images/relics/{Id.Entry.ToLowerInvariant()}_big.png";
-    [SavedProperty]
+
+    [SavedProperty(SerializationCondition.AlwaysSave)]
     public bool WasUsed
 	{
 		get

@@ -1,9 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://xyetakyqfy4w"]
-
-[ext_resource type="Texture2D" path="res://Test/images/ancients/test-test_ancient.png" id="1_7h545"]
-
-[node name="Node2D" type="Node2D"]
-
-[node name="TestTestAncient" type="Sprite2D" parent="."]
-position = Vector2(0, -1)
-texture = ExtResource("1_7h545")

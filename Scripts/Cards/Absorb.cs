@@ -18,7 +18,9 @@ public sealed class Absorb : CustomCardModel
 {
 
 	protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromPower<AbsorbPower>()];
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<AbsorbPower>(1m)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new 
+	PowerVar<AbsorbPower>(1m)
+	];
 	public Absorb()
 		: base(1, CardType.Skill, CardRarity.Ancient, TargetType.Self)
 	{

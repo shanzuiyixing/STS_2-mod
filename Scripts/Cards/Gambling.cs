@@ -17,7 +17,7 @@ public class Gambling : CustomCardModel
     protected override IEnumerable<DynamicVar>CanonicalVars => [
         new GoldVar(10)
     ];
-    public override string PortraitPath => $"res://Test/images/cards/test-test_card.png";    
+    public override string PortraitPath => $"res://Test/images/cards/{Id.Entry.ToLowerInvariant()}.png";     
 
     // 构造函数：定义卡牌基础属性
     public Gambling ()
@@ -42,11 +42,12 @@ public class Gambling : CustomCardModel
     {
         Rng rewards = Owner.Creature.Player.PlayerRng.Rewards;
         int random = rewards.NextInt(100);
-        // 2. 遍历每个队友，执行抽牌
+        
             if (base.Owner.Creature.Player.Gold < 10)
             {
                 return;
             }
+        await CreatureCmd.TriggerAnim(base.Owner.Creature, "Cast", base.Owner.Character.CastAnimDelay);
             await PlayerCmd.LoseGold(base.DynamicVars.Gold.BaseValue,base.Owner.Creature.Player);
             if (random < 50)
             {

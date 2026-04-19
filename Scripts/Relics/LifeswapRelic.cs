@@ -13,7 +13,7 @@ namespace Test.Scripts.Relics;
 public class LifeswapRelic : CustomRelicModel
 {
     // 稀有度
-    public override RelicRarity Rarity => RelicRarity.Common;
+    public override RelicRarity Rarity => RelicRarity.Ancient;
     protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<LifeswapPower>(8m)];
     // 小图标
     public override string PackedIconPath => $"res://Test/images/relics/{Id.Entry.ToLowerInvariant()}_small.png";

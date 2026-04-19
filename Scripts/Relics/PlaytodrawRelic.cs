@@ -8,7 +8,7 @@ using MegaCrit.Sts2.Core.Models.RelicPools;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Commands;
-using MegaCrit.Sts2.Core.ValueProps;
+using MegaCrit.Sts2.Core.Entities.Players;
 
 namespace Test.Scripts.Relics;
 
@@ -16,10 +16,12 @@ namespace Test.Scripts.Relics;
 public class PlaytodrawRelic : CustomRelicModel
 {
     // 稀有度
-    public override RelicRarity Rarity => RelicRarity.Common;
+    public override RelicRarity Rarity => RelicRarity.Ancient;
 
     // 遗物的数值。替换本地化中的{Cards}。
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new CardsVar(1)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [
+        new CardsVar(1),
+        ];
 
     // 小图标
     public override string PackedIconPath => $"res://Test/images/relics/{Id.Entry.ToLowerInvariant()}_small.png";
@@ -40,4 +42,13 @@ public class PlaytodrawRelic : CustomRelicModel
             }
 		}
     }
+    public override decimal ModifyHandDraw(Player player, decimal count)
+	{
+		if (player != base.Owner)
+		{
+			return count;
+		}
+		return count + base.DynamicVars.Cards.BaseValue;
+	}
+
 }

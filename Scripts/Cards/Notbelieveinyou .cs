@@ -26,7 +26,7 @@ public class Notbelieveinyou : CustomCardModel
     // 构造函数：定义卡牌基础属性
     public Notbelieveinyou ()
         : base(
-            1,              // 卡牌费用：0费
+            0,              // 卡牌费用：0费
             CardType.Skill, // 卡牌类型：技能牌
             CardRarity.Uncommon, // 卡牌稀有度：稀有
             TargetType.AnyAlly)  // 目标类型：任意一名队友
@@ -50,6 +50,6 @@ public class Notbelieveinyou : CustomCardModel
     // 卡牌升级时执行
     protected override void OnUpgrade()
 	{
-		base.EnergyCost.UpgradeBy(-1);
+		AddKeyword(CardKeyword.Retain);
     }
 }
