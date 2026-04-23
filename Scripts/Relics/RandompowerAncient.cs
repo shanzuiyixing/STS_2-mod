@@ -6,6 +6,7 @@ using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.RelicPools;
 using Test.Scripts.Cards;
+using MegaCrit.Sts2.Core.HoverTips;
 
 namespace Test.Scripts.Relics;
 
@@ -13,6 +14,7 @@ namespace Test.Scripts.Relics;
 
 public class RandompowerAncient : CustomRelicModel
 {
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => HoverTipFactory.FromCardWithCardHoverTips<Randompower>();
     // 稀有度
     public override RelicRarity Rarity => RelicRarity.Ancient;
 

@@ -12,7 +12,7 @@ using MegaCrit.Sts2.Core.Commands;
 
 namespace Test.Scripts.Cards;
 
-[Pool(typeof(ColorlessCardPool))]
+[Pool(typeof(EventCardPool))]
 
 public class Lotterydraw : CustomCardModel
 {
@@ -50,7 +50,7 @@ public class Lotterydraw : CustomCardModel
 #pragma warning restore CS8602 // 解引用可能出现空引用。
         Rng rewards = Owner.Creature.Player.PlayerRng.Rewards;
         int random = rewards.NextInt(100);
-        // 2. 遍历每个队友，执行抽牌
+        // 2. 遍历每个队友
         foreach (Creature item in enumerable)
         {
             if (random < 50)

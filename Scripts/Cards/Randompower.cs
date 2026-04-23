@@ -11,7 +11,7 @@ using MegaCrit.Sts2.Core.Commands;
 
 namespace Test.Scripts.Cards;
 
-[Pool(typeof(ColorlessCardPool))]
+[Pool(typeof(EventCardPool))]
 
 public class Randompower : CustomCardModel
 {

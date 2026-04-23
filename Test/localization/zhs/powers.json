@@ -1,7 +1,13 @@
 {
-    "TEST-LIFESWAP_POWER.description": "每回合结束时，获得[blue]8[/blue]点格挡，交换格挡值和血量",
+    "TEST-LIFESWAP_POWER.description": "每回合结束时，获得[blue]{Block:diff()}[/blue]点格挡，交换格挡值和血量",
     "TEST-LIFESWAP_POWER.title": "邪火",
 
-    "TEST-ABSORB_POWER.description": "回复造成伤害[red]{Amount}%[/red]的血量",
-    "TEST-ABSORB_POWER.title": "汲取"
+    "TEST-ABSORB_POWER.description": "回复造成伤害[red]20%[/red]的血量",
+    "TEST-ABSORB_POWER.title": "汲取",
+
+    "TEST-WAKU_POWER.description": "获得强大的能力，你的回合将被瓦库接管",
+    "TEST-WAKU_POWER.title": "瓦库形态",
+
+    "TEST-SUPER_SB_POWER.description": "每回合开始时，你每有一层中毒，获得[blue]1[/blue]点力量",
+    "TEST-SUPER_SB_POWER.title": "蛇咬的力量"
 }

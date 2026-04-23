@@ -3,7 +3,11 @@ using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Relics;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
+using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.RelicPools;
+using MegaCrit.Sts2.Core.Entities.Cards;
+
+using Test.Scripts.Cards;
 
 
 namespace Test.Scripts.Relics;
@@ -31,7 +35,8 @@ public class GoldRelic : CustomRelicModel
 	{
         Flash();
 		await PlayerCmd.GainGold(base.DynamicVars.Gold.BaseValue, base.Owner);
-        await CreatureCmd.SetMaxHp(base.Owner.Creature,1m);
+        CardModel card = base.Owner.RunState.CreateCard<SuperSnakeBite>(base.Owner);
+		CardCmd.PreviewCardPileAdd(await CardPileCmd.Add(card, PileType.Deck),2f);
 	}
 
 

@@ -1,6 +1,11 @@
-[gd_scene format=3 uid="uid://dsdxjwg6t3m5a"]
+[gd_scene load_steps=2 format=3 uid="uid://dsdxjwg6t3m5a"]
 
-[node name="Test" type="Node2D"]
+[ext_resource type="Texture2D" uid="uid://b4mwoybi7en1h" path="res://Test/images/orbs/test-shu_orb.png" id="1_vf5n8"]
 
-[node name="TestShuOrb" type="Sprite2D" parent="."]
-position = Vector2(0, 1)
+[node name="Shu" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 100.0
+offset_bottom = 98.0
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("1_vf5n8")

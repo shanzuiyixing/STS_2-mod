@@ -9,7 +9,7 @@ using MegaCrit.Sts2.Core.Models.CardPools;
 
 namespace Test.Scripts.Cards;
 
-[Pool(typeof(CurseCardPool))]
+[Pool(typeof(ColorlessCardPool))]
 
 public class Stealmoney : CustomCardModel
 {

@@ -5,10 +5,16 @@ using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Assets;
 
-namespace Test.Scripts;
+namespace Test.Scripts.Orbs;
 
 public class ShuOrb : CustomOrbModel
 {
+    // 被动持续音效（宝珠在场时循环播放）
+    protected override string PassiveSfx => "event:/sfx/characters/defect/defect_lightning_passive";
+    // 触发宝珠时的音效
+    protected override string EvokeSfx => "event:/sfx/characters/defect/defect_lightning_evoke";
+    // 装备/召唤宝珠时的音效
+    protected override string ChannelSfx => "event:/sfx/characters/defect/defect_lightning_channel";
     // 被动效果数值，ModifyOrbValue表示是否吃集中等
     public override decimal PassiveVal => ModifyOrbValue(1);
 
@@ -22,7 +28,7 @@ public class ShuOrb : CustomOrbModel
     // public override bool IncludeInRandomPool => false;
 
     // 提示图标路径
-    //public override string? CustomIconPath => "res://icon.svg";
+    public override string? CustomIconPath => "res://icon.svg";
     // 球的场景的路径。如果你使用这个，你必须要有一个名称为SpineSkeleton并且是SpineSprite类型的节点
     // public override string? CustomSpritePath => "res://test/scenes/test_orb.tscn";
 
@@ -35,6 +41,7 @@ public class ShuOrb : CustomOrbModel
     // 回合开始时触发被动
     public override async Task AfterTurnStartOrbTrigger(PlayerChoiceContext choiceContext)
     {
+        Trigger(); // 触发宝珠动画/状态
         await Passive(choiceContext, null);
     }
 

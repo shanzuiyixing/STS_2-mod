@@ -30,7 +30,8 @@ public class KamiAncient : CustomAncientModel
     protected override OptionPools MakeOptionPools { get; } = new OptionPools(
         MakePool(
             AncientOption<AbsorbAncient>(),
-            AncientOption<LotterydrawAncient>()
+            AncientOption<LotterydrawAncient>(),
+            AncientOption<Turnplayback>()
         ),
         MakePool(
             AncientOption<TurnAncient>(),

@@ -10,6 +10,7 @@ using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.ValueProps;
 using MegaCrit.Sts2.Core.Saves.Runs;
 using MegaCrit.Sts2.Core.Helpers;
+using MegaCrit.Sts2.Core.Random;
 
 namespace Test.Scripts.Relics;
 
@@ -27,12 +28,13 @@ public class NinelivesRelic : CustomRelicModel
 
     // 遗物的数值。替换本地化中的{Cards}。
     protected override IEnumerable<DynamicVar> CanonicalVars => [
-        new DynamicVar("Lives", RemainingLives)
+        new DynamicVar("Lives", RemainingLives),
+        new MaxHpVar(10)
         ];
     public override bool IsUsedUp =>  RemainingLives <= 0;
 
-    private bool _isActivating;
-
+    public override bool ShowCounter => true;
+	[SavedProperty]
 	public int RemainingLives
 	{
 		get
@@ -41,35 +43,14 @@ public class NinelivesRelic : CustomRelicModel
 		}
 		set
 		{
-			_remainingLives = value;
 			AssertMutable();
+			_remainingLives = value;
 			InvokeDisplayAmountChanged();
 		}
 	}
 
     // 界面上显示的数字
-	public override int DisplayAmount
-	{
-		get
-		{
-			return base.DynamicVars["Lives"].IntValue; // 激活时：显示阈值5
-		}
-	}
-
-    // 激活中状态（动画用）
-    private bool IsActivating
-	{
-		get
-		{
-			return _isActivating;
-		}
-		set
-		{
-			AssertMutable();
-			_isActivating = value;
-			InvokeDisplayAmountChanged();
-		}
-	}
+	public override int DisplayAmount => _remainingLives;
     // 小图标
     public override string PackedIconPath => $"res://Test/images/relics/{Id.Entry.ToLowerInvariant()}_small.png";
     // 轮廓图标
@@ -93,9 +74,8 @@ public class NinelivesRelic : CustomRelicModel
     public override async Task AfterPreventingDeath(Creature creature)
     {
 
-    	TaskHelper.RunSafely(DoActivateVisuals());
         Flash();
-		_remainingLives--;
+		RemainingLives--;
         await CreatureCmd.Heal(creature, 1m);
         var targets = creature.CombatState?.HittableEnemies;
 		if (creature.Player.RunState.CurrentRoom != null && creature.Player.RunState.CurrentRoom.RoomType == RoomType.Boss)
@@ -104,10 +84,12 @@ public class NinelivesRelic : CustomRelicModel
 		}
         else if (targets != null && targets.Count > 0)
         {
+			Rng rng = Owner.Creature.Player.PlayerRng.Rewards;
+        int Damagenum = rng.NextInt(999);
             await CreatureCmd.Damage(
                 new ThrowingPlayerChoiceContext(),
                 targets,
-                999m,
+                Damagenum,
                 ValueProp.Unblockable | ValueProp.Unpowered,
                 null, null);
         }
@@ -117,14 +99,7 @@ public class NinelivesRelic : CustomRelicModel
     public override async Task AfterObtained()
 	{
         Flash();
-		await CreatureCmd.SetMaxHp(base.Owner.Creature,10m);
+		await CreatureCmd.SetMaxHp(base.Owner.Creature,base.DynamicVars.MaxHp.BaseValue);
 	}
 
-	private async Task DoActivateVisuals()
-	{
-		IsActivating = true;
-		Flash();
-		await Cmd.Wait(1f);
-		IsActivating = false;
-	}
 }

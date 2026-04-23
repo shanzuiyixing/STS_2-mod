@@ -26,7 +26,7 @@ public class TurnAncient : CustomRelicModel
     // 大图标
     protected override string BigIconPath => $"res://Test/images/relics/{Id.Entry.ToLowerInvariant()}_big.png";
     
-    public  override async Task AfterCardDrawn(PlayerChoiceContext choiceContext, CardModel card, bool fromHandDraw)
+    public  override async Task AfterCardDrawn(PlayerChoiceContext PlayerChoiceContext, CardModel card, bool fromHandDraw)
 	{
         if (base.Owner.Creature.Player != card.Owner)
         {
@@ -50,7 +50,7 @@ public class TurnAncient : CustomRelicModel
             await PlayerCmd.GainEnergy(1m,base.Owner);
         }
     }
-    public override async Task AfterCardPlayed(PlayerChoiceContext context, CardPlay cardPlay)
+    public override async Task AfterCardPlayed(PlayerChoiceContext PlayerChoiceContext, CardPlay cardPlay)
     {
         // 只响应：减益拥有者自己打出的牌
         if (cardPlay.Card.Owner == base.Owner.Creature.Player)

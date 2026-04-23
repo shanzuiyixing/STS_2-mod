@@ -4,7 +4,7 @@
   "TEST-TEST_RELIC.flavor": "觉得很眼熟？",
 
   "TEST-GOLD_RELIC.title": "黄金圣物",
-  "TEST-GOLD_RELIC.description": "获得[blue]{Gold:diff()}[/blue]金币,将最大生命值设置为[blue]1[/blue]",
+  "TEST-GOLD_RELIC.description": "获得[blue]{Gold:diff()}[/blue]金币,将[blue]1[/blue]张[purple]超级蛇咬[/purple]添加到你的[gold]牌组[/gold]中",
   "TEST-GOLD_RELIC.flavor": "觉得很眼熟？",
 
   "TEST-LIFESWAP_RELIC.title":"诅咒面具-赤",
@@ -20,11 +20,11 @@
   "TEST-PLAYTODRAW_RELIC.flavor": "觉得很眼熟？",
 
   "TEST-HITANDBLOCK.title":"循环",
-  "TEST-HITANDBLOCK.description": "奇数回合：获得[blue]3[/blue]力量和脆弱\n 偶数回合：获得[blue]2[/blue]敏捷和虚弱",
+  "TEST-HITANDBLOCK.description": "奇数回合：获得[blue]3[/blue]力量和脆弱\n偶数回合：获得[blue]2[/blue]敏捷和虚弱",
   "TEST-HITANDBLOCK.flavor": "觉得很眼熟？",
 
   "TEST-REVIVE_PACT_RELIC.title":"死灵法师",
-  "TEST-REVIVE_PACT_RELIC.description": "每次战斗中，另一名玩家死亡后会复活一次\n拾起时，失去[red]23[/red]点最大生命",
+  "TEST-REVIVE_PACT_RELIC.description": "每次战斗中，另一名玩家死亡后会复活一次\n拾起时，失去[red]{MaxHp}[/red]点最大生命",
   "TEST-REVIVE_PACT_RELIC.flavor": "觉得很眼熟？",
 
   "TEST-ABSORB_ANCIENT.title":"吸收者",
@@ -32,11 +32,11 @@
   "TEST-ABSORB_ANCIENT.flavor": "觉得很眼熟？",
 
   "TEST-TURN_ANCIENT.title":"转换者",
-  "TEST-TURN_ANCIENT.description": "每次抽牌时，获得[blue]1[/blue]点力量、敏捷或能量，每打出牌，失去[red]1[/red]点力量、敏捷或能量",
+  "TEST-TURN_ANCIENT.description": "每次抽牌时，随机获得[blue]1[/blue]点力量、敏捷或能量，每打出攻击牌，失去[red]1[/red]点力量\n每打出技能牌，失去[red]1[/red]点敏捷\n每打出一张牌，失去[red]1[/red]点能量",
   "TEST-TURN_ANCIENT.flavor": "觉得很眼熟？",
 
   "TEST-NINELIVES_RELIC.title":"九条命",
-  "TEST-NINELIVES_RELIC.description": "拥有9次复活机会，当你死亡时，对所有敌人造成999伤害，拾起时，将最大生命值设置成[red]10[/red]",
+  "TEST-NINELIVES_RELIC.description": "拥有9次复活机会，当你死亡时，对所有敌人造成随机伤害，拾起时，将最大生命值设置成[red]{MaxHp}[/red]",
   "TEST-NINELIVES_RELIC.flavor": "觉得很眼熟？",
 
   "TEST-LOTTERYDRAW_ANCIENT.title":"幸运之子",
@@ -47,7 +47,7 @@
   "TEST-RANDOMPOWER_ANCIENT.description": "拾起时，将[blue]1[/blue]张[gold]能力抽奖[/gold]添加到你的[gold]牌组[/gold]中。",
   "TEST-RANDOMPOWER_ANCIENT.flavor": "觉得很眼熟？",
 
-  "TEST-STEALBLOCK.title":" 窃取",
-  "TEST-STEALBLOCK.description": "窃取另一名队友的格挡",
-  "TEST-STEALBLOCK.flavor": "觉得很眼熟？"
+  "TEST-TURNPLAYBACK.title":"数学课",
+  "TEST-TURNPLAYBACK.description": "每回合打出的第x张牌会多打出一次（x：回合数）",
+  "TEST-TURNPLAYBACK.flavor": "觉得很眼熟？"
 }

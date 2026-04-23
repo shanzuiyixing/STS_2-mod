@@ -8,18 +8,17 @@ using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using Test.Scripts.Powers;
 using MegaCrit.Sts2.Core.Models.CardPools;
 using MegaCrit.Sts2.Core.Combat;
-using MegaCrit.Sts2.Core.Entities.Creatures;
 
 
 namespace Test.Scripts.Cards;
 
-[Pool(typeof(ColorlessCardPool))]
+[Pool(typeof(EventCardPool))]
 public sealed class Absorb : CustomCardModel
 {
 
 	protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromPower<AbsorbPower>()];
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new 
-	PowerVar<AbsorbPower>(1m)
+    protected override IEnumerable<DynamicVar> CanonicalVars => [
+		new PowerVar<AbsorbPower>(1m)
 	];
 	public Absorb()
 		: base(1, CardType.Skill, CardRarity.Ancient, TargetType.Self)

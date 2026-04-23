@@ -3,7 +3,7 @@
     "TEST-NOTBELIEVEINYOU.description": "另一名玩家获得失去所有能量，你获得其失去的双倍能量",
 
     "TEST-STATUSTOFRIEND.title": "挣脱",
-    "TEST-STATUSTOFRIEND.description": "消耗你的所有状态牌，（偷偷的）将等量随机状态牌加入另一名玩家的弃牌堆",
+    "TEST-STATUSTOFRIEND.description": "消耗你的所有状态牌，将其(悄悄地)加入另一名玩家的弃牌堆",
 
     "TEST-STEALMONEY.title": "增益",
     "TEST-STEALMONEY.description": "获取每个其他玩家一块钱",
@@ -11,8 +11,8 @@
     "TEST-LOTTERYDRAW.title": "幸运之子（防御）",
     "TEST-LOTTERYDRAW.description": "所有玩家进行一次防御端抽奖",
 
-    "TEST-RANDOMPOWER.title": "能力抽奖",
-    "TEST-RANDOMPOWER.description": "进行一次强力能力端抽奖",
+    "TEST-RANDOMPOWER.title": "幸运之子（能力）",
+    "TEST-RANDOMPOWER.description": "所有玩家进行一次强力能力端抽奖",
 
     "TEST-GAMBLING.title": "读博",
     "TEST-GAMBLING.description": "花费10金币，进行一次金币抽奖，打出后会回到手中",
@@ -21,5 +21,23 @@
     "TEST-ABSORB.description": "获得[blue]{AbsorbPower:diff()}[/blue]层汲取\n回合结束时，失去所有汲取",
 
     "TEST-STEALBLOCK.title": "窃取",
-    "TEST-STEALBLOCK.description": "窃取另一名队友的格挡,获得二倍格挡"
+    "TEST-STEALBLOCK.description": "窃取另一名队友的格挡,获得二倍格挡",
+
+    "TEST-WAKUFRIEND.title": "恶魔果实",
+    "TEST-WAKUFRIEND.description": "失去瓦库形态，令一名其他玩家获得[blue]1[/blue]层无实体、获得瓦库形态，生成一张恶魔果实加入其抽牌堆",
+
+    "TEST-SUPER_SNAKE_BITE.title": "被蛇咬",
+    "TEST-SUPER_SNAKE_BITE.description": "在你的回合结束时，如果这张牌在你的[gold]手牌[/gold]中, 你受到{PoisonPower:diff()}层[gold]中毒[/gold]。",
+
+    "TEST-FUCKFRIEND.title": "我不会告诉你任何事",
+    "TEST-FUCKFRIEND.description": "获得一个闪电球，电击另一名玩家直到破防，每电击一次其本回合获得一点力量",
+
+    "TEST-S_BTOFRIEND.title": "蛇咬形态",
+    "TEST-S_BTOFRIEND.description": "令一名玩家获得[blue]{AbsorbPower:diff()}[/blue]层汲取\n令一名玩家获得[blue]{SuperSbPower:diff()}[/blue]层蛇咬的力量\n将一张[gold]被蛇咬[/gold]添加到其手牌",
+
+    "TEST-COLORLESSTOFRIEND.title": "压榨",
+    "TEST-COLORLESSTOFRIEND.description": "令一名玩家手牌塞满本回合可以免费打出的无色牌，其本回合不可再抽牌",
+
+    "TEST-SAMEASYOU.title": "克隆",
+    "TEST-SAMEASYOU.description": "复刻另一名玩家的随机一种能力"
 }
