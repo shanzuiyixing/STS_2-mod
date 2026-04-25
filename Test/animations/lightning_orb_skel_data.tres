@@ -1,0 +1,13 @@
+[gd_resource type="SpineSkeletonDataResource" load_steps=3 format=3 uid="uid://8odm3wcdfwr1"]
+
+[sub_resource type="Resource" id="Resource_8lr2j"]
+metadata/__load_path__ = "res://Test/animations/defect_lightning_orb.atlas"
+
+[sub_resource type="Resource" id="Resource_h7axv"]
+metadata/__load_path__ = "res://Test/animations/lightning_orb.skel"
+
+[resource]
+resource_local_to_scene = false
+resource_name = ""
+atlas_res = SubResource("Resource_8lr2j")
+skeleton_file_res = SubResource("Resource_h7axv")

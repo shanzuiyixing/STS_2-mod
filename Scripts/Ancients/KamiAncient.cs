@@ -4,8 +4,7 @@ using BaseLib.Utils;
 using Godot;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Relics;
-using Test.Scripts.Relics;
-
+using Test.Scripts.Relics.KamiAncient;
 namespace Test.Scripts.Ancients;
 
 public class KamiAncient : CustomAncientModel
@@ -35,7 +34,8 @@ public class KamiAncient : CustomAncientModel
         ),
         MakePool(
             AncientOption<TurnAncient>(),
-            AncientOption<RandompowerAncient>()
+            AncientOption<RandompowerAncient>(),
+            AncientOption<NinelivesRelic>()
         ),
         MakePool(
             AncientOption<PlaytodrawRelic>(),

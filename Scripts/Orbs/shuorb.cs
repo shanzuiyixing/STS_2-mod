@@ -16,16 +16,17 @@ public class ShuOrb : CustomOrbModel
     // 装备/召唤宝珠时的音效
     protected override string ChannelSfx => "event:/sfx/characters/defect/defect_lightning_channel";
     // 被动效果数值，ModifyOrbValue表示是否吃集中等
-    public override decimal PassiveVal => ModifyOrbValue(1);
+    public override decimal PassiveVal =>
+    1m;
 
     // 激发效果数值
-    public override decimal EvokeVal => ModifyOrbValue(2);
+    public override decimal EvokeVal => 2m;
 
     // 暗色，使用球的主体色的暗色调
     public override Color DarkenedColor => new(0.1f, 0.2f, 0.5f);
 
     // 不出现在随机球池中
-    // public override bool IncludeInRandomPool => false;
+    public override bool IncludeInRandomPool => true;
 
     // 提示图标路径
     public override string? CustomIconPath => "res://icon.svg";

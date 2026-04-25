@@ -21,7 +21,7 @@
     "TEST-ABSORB.description": "获得[blue]{AbsorbPower:diff()}[/blue]层汲取\n回合结束时，失去所有汲取",
 
     "TEST-STEALBLOCK.title": "窃取",
-    "TEST-STEALBLOCK.description": "窃取另一名队友的格挡,获得二倍格挡",
+    "TEST-STEALBLOCK.description": "窃取另一名队友的格挡,获得[blue]{IfUpgraded:show:三倍|两倍}[/blue]格挡",
 
     "TEST-WAKUFRIEND.title": "恶魔果实",
     "TEST-WAKUFRIEND.description": "失去瓦库形态，令一名其他玩家获得[blue]1[/blue]层无实体、获得瓦库形态，生成一张恶魔果实加入其抽牌堆",
@@ -30,7 +30,7 @@
     "TEST-SUPER_SNAKE_BITE.description": "在你的回合结束时，如果这张牌在你的[gold]手牌[/gold]中, 你受到{PoisonPower:diff()}层[gold]中毒[/gold]。",
 
     "TEST-FUCKFRIEND.title": "我不会告诉你任何事",
-    "TEST-FUCKFRIEND.description": "获得一个闪电球，电击另一名玩家直到破防，每电击一次其本回合获得一点力量",
+    "TEST-FUCKFRIEND.description": "获得一个闪电球，电击另一名玩家直到破防，每电击一次其本回合便获得一点力量",
 
     "TEST-S_BTOFRIEND.title": "蛇咬形态",
     "TEST-S_BTOFRIEND.description": "令一名玩家获得[blue]{AbsorbPower:diff()}[/blue]层汲取\n令一名玩家获得[blue]{SuperSbPower:diff()}[/blue]层蛇咬的力量\n将一张[gold]被蛇咬[/gold]添加到其手牌",
@@ -38,6 +38,9 @@
     "TEST-COLORLESSTOFRIEND.title": "压榨",
     "TEST-COLORLESSTOFRIEND.description": "令一名玩家手牌塞满本回合可以免费打出的无色牌，其本回合不可再抽牌",
 
-    "TEST-SAMEASYOU.title": "克隆",
-    "TEST-SAMEASYOU.description": "复刻另一名玩家的随机一种能力"
+    "TEST-SAMEASYOU.title": "和你一样",
+    "TEST-SAMEASYOU.description": "复刻另一名玩家的随机一种能力",
+
+    "TEST-GUARD.title": "雇佣",
+    "TEST-GUARD.description": "支付[gold]{Gold:diff()}[/gold]金币，选择一名玩家承受你本回合的伤害"
 }

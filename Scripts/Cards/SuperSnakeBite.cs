@@ -14,9 +14,12 @@ using Test.Scripts.Powers;
 namespace Test.Scripts.Cards;
 
 [Pool(typeof(CurseCardPool))]
+
 public sealed class SuperSnakeBite : CustomCardModel
 {
+	public override int MaxUpgradeLevel => 0;
 
+	public override bool CanBeGeneratedByModifiers => false;
 	protected override IEnumerable<IHoverTip> ExtraHoverTips => [
 		HoverTipFactory.FromPower<PoisonPower>(),	
 		];

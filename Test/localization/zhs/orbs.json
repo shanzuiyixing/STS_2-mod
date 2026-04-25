@@ -1,5 +1,9 @@
 {
     "TEST-SHU_ORB.description": "充能球：回合开始时抽牌。",
     "TEST-SHU_ORB.smartDescription": "[gold]被动：[/gold]回合开始时，抽[blue]{Passive}[/blue]张牌。\n[gold]激发：[/gold]抽[blue]{Evoke}[/blue]张牌。",
-    "TEST-SHU_ORB.title": "鼠"
+    "TEST-SHU_ORB.title": "鼠",
+
+    "TEST-GRASS_ORB.description": "充能球：回合结束时回血",
+    "TEST-GRASS_ORB.smartDescription": "[gold]被动：[/gold]回合结束时，回复[green]{Passive}[/green]点生命。\n[gold]激发：[/gold]回复[green]{Passive}[/green]点生命",
+    "TEST-GRASS_ORB.title": "草元素"
 }

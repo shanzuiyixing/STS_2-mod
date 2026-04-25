@@ -9,6 +9,7 @@ using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.Random;
 using MegaCrit.Sts2.Core.Commands;
 
+
 namespace Test.Scripts.Cards;
 
 [Pool(typeof(EventCardPool))]

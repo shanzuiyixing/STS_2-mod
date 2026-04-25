@@ -1,8 +1,4 @@
 {
-  "TEST-TEST_RELIC.title": "测试遗物",
-  "TEST-TEST_RELIC.description": "每回合开始时，抽[blue]{Cards}[/blue]张牌。",
-  "TEST-TEST_RELIC.flavor": "觉得很眼熟？",
-
   "TEST-GOLD_RELIC.title": "黄金圣物",
   "TEST-GOLD_RELIC.description": "获得[blue]{Gold:diff()}[/blue]金币,将[blue]1[/blue]张[purple]超级蛇咬[/purple]添加到你的[gold]牌组[/gold]中",
   "TEST-GOLD_RELIC.flavor": "觉得很眼熟？",
@@ -27,8 +23,8 @@
   "TEST-REVIVE_PACT_RELIC.description": "每次战斗中，另一名玩家死亡后会复活一次\n拾起时，失去[red]{MaxHp}[/red]点最大生命",
   "TEST-REVIVE_PACT_RELIC.flavor": "觉得很眼熟？",
 
-  "TEST-ABSORB_ANCIENT.title":"吸收者",
-  "TEST-ABSORB_ANCIENT.description": "拾起时，将[blue]1[/blue]张[gold]嗜血[/gold]添加到你的[gold]牌组[/gold]中。",
+  "TEST-ABSORB_ANCIENT.title":"嗜血剑",
+  "TEST-ABSORB_ANCIENT.description": "拾起时，将[blue]1[/blue]张[gold]嗜血[/gold]添加到你的[gold]牌组[/gold]中",
   "TEST-ABSORB_ANCIENT.flavor": "觉得很眼熟？",
 
   "TEST-TURN_ANCIENT.title":"转换者",
@@ -36,11 +32,11 @@
   "TEST-TURN_ANCIENT.flavor": "觉得很眼熟？",
 
   "TEST-NINELIVES_RELIC.title":"九条命",
-  "TEST-NINELIVES_RELIC.description": "拥有9次复活机会，当你死亡时，对所有敌人造成随机伤害，拾起时，将最大生命值设置成[red]{MaxHp}[/red]",
+  "TEST-NINELIVES_RELIC.description": "拥有9次复活机会，当你死亡时，对所有敌人造成随机伤害，拾起时，将最大生命值设置一个随机数",
   "TEST-NINELIVES_RELIC.flavor": "觉得很眼熟？",
 
   "TEST-LOTTERYDRAW_ANCIENT.title":"幸运之子",
-  "TEST-LOTTERYDRAW_ANCIENT.description": "拾起时，将[blue]1[/blue]张[gold]防御抽奖[/gold]添加到你的[gold]牌组[/gold]中。",
+  "TEST-LOTTERYDRAW_ANCIENT.description": "拾起时，将[blue]1[/blue]张[gold]防御抽奖[/gold]添加到你的[gold]牌组[/gold]中",
   "TEST-LOTTERYDRAW_ANCIENT.flavor": "觉得很眼熟？",
 
   "TEST-RANDOMPOWER_ANCIENT.title":"能力抽奖",
@@ -49,5 +45,9 @@
 
   "TEST-TURNPLAYBACK.title":"数学课",
   "TEST-TURNPLAYBACK.description": "每回合打出的第x张牌会多打出一次（x：回合数）",
-  "TEST-TURNPLAYBACK.flavor": "觉得很眼熟？"
+  "TEST-TURNPLAYBACK.flavor": "觉得很眼熟？",
+
+  "TEST-QU.title":"区体化",
+  "TEST-QU.description": "当你生命值为0，若你有队友，则你回复[red]1[/red]点生命,之后你的初始摸牌数始终未[blue]1[/blue]",
+  "TEST-QU.flavor": "觉得很眼熟？"
 }

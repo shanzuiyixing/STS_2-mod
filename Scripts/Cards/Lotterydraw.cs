@@ -12,7 +12,7 @@ using MegaCrit.Sts2.Core.Commands;
 
 namespace Test.Scripts.Cards;
 
-[Pool(typeof(EventCardPool))]
+[Pool(typeof(ColorlessCardPool))]
 
 public class Lotterydraw : CustomCardModel
 {
@@ -35,7 +35,7 @@ public class Lotterydraw : CustomCardModel
         : base(
             1,              // 卡牌费用：1费
             CardType.Skill, // 卡牌类型：技能牌
-            CardRarity.Ancient, // 卡牌稀有度：稀有
+            CardRarity.Uncommon, // 卡牌稀有度：稀有
             TargetType.AllAllies)  // 目标类型：任意一名队友
     {
     }

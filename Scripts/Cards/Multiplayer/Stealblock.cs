@@ -28,7 +28,8 @@ public class Stealblock : CustomCardModel
 
     // 核心约束：仅限多人模式使用
     public override CardMultiplayerConstraint MultiplayerConstraint => CardMultiplayerConstraint.MultiplayerOnly;
-
+    public override bool GainsBlock => true;
+    
     // 构造函数：定义卡牌基础属性
     public Stealblock ()
         : base(
